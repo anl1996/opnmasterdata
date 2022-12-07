@@ -4,3 +4,4 @@ gunicorn
 plotly
 dash-bootstrap-components
 openpyxl
+numpy
