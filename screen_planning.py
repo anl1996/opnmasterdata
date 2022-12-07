@@ -1,21 +1,14 @@
 import pandas as pd
-import numpy as np 
-import seaborn as sns
 import glob
-from sklearn.metrics import r2_score
-import statsmodels.api as sm
 import dash
 from dash import dcc, html
-from flask import Flask
 import dash_bootstrap_components as dbc
 import plotly.express as px
 import plotly.graph_objects as go
 from dash import Dash, dcc, html, Input, Output, State
 import plotly.figure_factory as ff
-from jupyter_dash import JupyterDash
-path = "C:\\Users\\anila\\Desktop\\Yeni klasör (2)"
-filenames = glob.glob(path + "/*.xlsm")
-allExcelFiles = glob.glob("C:\\Users\\anila\\Desktop\\Yeni klasör (2)\\*.xlsm")
+filenames = glob.glob("/*.xlsm")
+allExcelFiles = glob.glob("*.xlsm")
 campaign_type = "LAUNCH","ONGOING"
 db_TV = pd.concat(pd.read_excel(excelFile,sheet_name="TV_Database") for excelFile in allExcelFiles)
 db_FB = pd.concat(pd.read_excel(excelFile,sheet_name="FB_Database") for excelFile in allExcelFiles)
