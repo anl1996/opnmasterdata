@@ -340,6 +340,7 @@ with pd.ExcelWriter("C:\\Users\\anila\\Desktop\\filename.xlsx") as writer:
 # Initiate the App
 #server = Flask(__name__)
 app = dash.Dash(__name__)
+server = app.server
 # Read files
 
 # Build the Components
